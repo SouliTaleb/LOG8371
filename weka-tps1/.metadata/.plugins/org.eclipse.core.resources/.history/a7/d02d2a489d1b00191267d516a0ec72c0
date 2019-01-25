@@ -1,0 +1,13 @@
+package wekaProject;
+
+import weka.core.Instances;
+import weka.core.converters.*;
+public class Helloweka {
+
+	public static void main(String[] args) throws Exception {
+		CSVLoader source = new CSVLoader("D:/weka/eng-england-master/2010s/2017-18/3-league1.csv");
+		Instances dataSet = source.getDataSet();
+		
+		System.out.println(dataSet.toSummaryString());
+	}
+}

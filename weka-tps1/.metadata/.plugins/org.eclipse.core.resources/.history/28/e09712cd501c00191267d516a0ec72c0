@@ -1,0 +1,32 @@
+package wekaProject;
+
+import java.io.File;
+
+import weka.core.Instances;
+import weka.core.converters.CSVLoader;
+import weka.core.converters.ArffSaver;
+
+public class Helloweka {
+
+	public static void main(String[] args) throws Exception {
+		
+		
+		// converte CSV to Arff fomat 
+		
+		CSVLoader loader = new CSVLoader();
+		loader.setSource(new File("D:/weka/eng-england-master/2010s/2017-18/5-conference.csv"));
+		
+		Instances data = loader.getDataSet();
+		
+		ArffSaver convArrfSaver = new ArffSaver();
+		convArrfSaver.setInstances(data);;
+		convArrfSaver.setFile(new File("D:/weka/testResuptatConv.arff"));
+		convArrfSaver.writeBatch(); // coper le fichier csv dans le arff
+		
+		
+
+		
+		
+		
+	}
+}

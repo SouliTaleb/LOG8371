@@ -1,0 +1,10 @@
+package wekaProject;
+import weka.*;
+
+import weka.core.converters.ConverterUtils.DataSource;
+public class Helloweka {
+
+	public static void main(String[] args) throws Exception {
+		DataSource source = new DataSource("D:/weka/eng-england-master/2010s/2017-18/3-league1.csv");
+	}
+}

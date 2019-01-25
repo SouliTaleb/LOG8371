@@ -1,0 +1,8 @@
+package thePack;
+
+public class unClass {
+	public void print() {
+		
+	};
+
+}
