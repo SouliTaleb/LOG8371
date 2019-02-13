@@ -55,6 +55,9 @@ public class AllTests extends TestSuite {
 
     // filters
     suite.addTest(weka.filters.AllTests.suite());
+    
+    // New Function
+    suite.addTest(weka.newFunction.AllTests.suite());
 
     // High level applications
     // suite.addTest(weka.experiment.AllTests.suite());
