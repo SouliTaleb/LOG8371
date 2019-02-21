@@ -1,8 +1,0 @@
-package thePack;
-
-public class uneClass {
-	public void print() {
-		int a = 2;
-	};
-
-}

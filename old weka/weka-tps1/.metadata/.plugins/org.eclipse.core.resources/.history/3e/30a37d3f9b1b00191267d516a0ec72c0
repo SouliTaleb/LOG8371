@@ -1,9 +1,0 @@
-package wekaProject;
-import weka.*;
-
-public class Helloweka {
-
-	public static void main(String[] args) {
-		System.out.println("hello weka");
-	}
-}
